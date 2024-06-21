@@ -1,0 +1,141 @@
+main {
+    padding: 40px;
+}
+
+.intro-container {
+    display: flex;
+    align-items: center;
+    margin-left: 125px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+}
+
+.intro-text {
+    margin-left: 50px;
+}
+
+.cartoon-me {
+    max-width: 40%;
+    height: auto;
+}
+
+.project-container {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.projects {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.role-detail {
+    text-align: left;
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: 'Source Sans 3', sans-serif;
+    color: #54585a;
+    /* font-style: italic;
+    color: #333; */
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        padding: 0px 0px;
+    }
+    body {
+        padding: 0;
+    }
+    .intro-text {
+        margin-left: 0px;
+    }
+    .intro-container {
+        flex-direction: column;
+        margin-right: 50px;
+        margin-left: 50px;
+        margin-bottom: 80px;
+    }
+    .cartoon-me {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 25px;
+    }
+    .project-container {
+        padding: 40px 0;
+    }
+    .project-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .projects {
+        max-width: 80%;
+    }
+    #navbar-container {
+        padding: 0 20px;
+    }
+    .role-detail {
+        font-size: 16px;
+    }
+    .header {
+        font-size: 44px;
+        margin-left: 0px;
+        margin-bottom: 5px;
+    }
+}
+
+/* Project hovers */
+.project-overlay {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.project-overlay img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+.project-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    opacity: 0;
+    padding: 20px;
+    transition: opacity 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.project-overlay:hover img {
+    transform: scale(1.1);
+}
+.project-overlay:hover .project-description {
+    opacity: 1;
+}
+.project-description h4 {
+    margin-bottom: 10px;
+}
+.project-description p {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
