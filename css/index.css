@@ -102,7 +102,7 @@ h2 {
         margin-left: 0px;
         margin-bottom: 5px;
     }
-    .categories-section {
+    .categories-section, .sponsors-section {
         grid-template-columns: 1fr;
     }
 }
