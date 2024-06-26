@@ -17,13 +17,11 @@ body {
     background: #f8f8f8;
 }
 
-
-
 /* Navbar */
 nav {
     display: flex;
     align-items: center;
-    padding: 20px 40px;
+    padding: 10px 0px 0px 20px; /* Up right down left */
     background-color: #fff;
 }
 .navbar-logo {
@@ -46,19 +44,13 @@ nav ul li {
     font-weight: bold;
     font-family: 'Quicksand', sans-serif;
 }
-.home { background-color: #4CAF50; } /* Green */
-.face-painting { background-color: #FF5722; } /* Orange */
-.airbrush { background-color: #00BCD4; } /* Cyan */
-.balloons { background-color: #FFC107; } /* Amber */
-.caricatures { background-color: #9C27B0; } /* Purple */
-.henna { background-color: #FF9800; } /* Deep Orange */
-.glitter-tattoos { background-color: #E91E63; } /* Pink */
+.home { background-color: #9C27B0; }
+.about { background-color: #FF9800; }
+.gallery { background-color: #E91E63; }
+.faq { background-color: #00BCD4; }
 .nav-item:hover {
     opacity: 0.8;
 }
-
-
-
 
 main {
     flex: 1;
@@ -80,7 +72,7 @@ main {
 /* Titles */
 .header {
     display: inline-flex;
-    font-size: 50px;
+    font-size: 40px;
     margin-bottom: 20px;
     color:#000000;
     padding: 2px 5px;
