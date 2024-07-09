@@ -5,8 +5,6 @@ main {
 .intro-container {
     display: flex;
     align-items: center;
-    /* margin-left: 125px;
-    margin-right: 100px; */
     margin-bottom: 100px;
 }
 
@@ -27,9 +25,6 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    /* position: absolute;
-    left: 0;
-    right: 0; */
     margin-left: calc(50% - 50vw);
     width: 100vw;
     padding: 40px;
@@ -53,29 +48,29 @@ h2 {
     margin-top: 20px;
     font-family: 'Source Sans 3', sans-serif;
 }
+
 /* Sponsors Section */
 .sponsors-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    /* position: absolute;
-    left: 0;
-    right: 0; */
     margin-left: calc(50% - 50vw);
     width: 100vw;
     padding: 40px;
-    /* background-color: #f0f0f0; */
 }
 .sponsor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
-    text-align: center;
-    font-size: 18px;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: bold;
-    color: #333333;
+    height: 400px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.sponsor img {
+    max-width: 100%;
+    height: auto;
 }
 
 @media screen and (max-width: 768px) {
@@ -94,9 +89,6 @@ h2 {
         margin-left: 50px;
         margin-bottom: 80px;
     }
-    /* .role-detail {
-        font-size: 16px;
-    } */
     .header {
         font-size: 44px;
         margin-left: 0px;
