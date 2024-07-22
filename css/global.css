@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    overflow-x: hidden;
+    background: #fff;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "owners-text", sans-serif;
+    font-weight: 400;
+    background: #f8f8f8;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    align-items: center;
+    padding: 10px 0px 0px 20px; /* Up right down left */
+    background-color: #3398d7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+.navbar-logo {
+    height: 60px;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+.nav-item {
+    display: inline-block;
+    padding: 0px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-family: "chinese-rocks", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+}
+
+main {
+    flex: 1;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    main, body {
+        padding: 0 20px;
+    }
+}
+
+/* Titles */
+.header {
+    display: inline-flex;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #000000;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #fff;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-left, .footer-right {
+    flex: 1;
+}
+.footer-left {
+    text-align: left;
+    color: rgba(0, 0, 0, 0.62); /* Black with 62% opacity */
+    font-size: 12px;
+}
+.footer-right {
+    text-align: right;
+}
+.instagram-icon {
+    width: 20px;
+    height: auto;
+    margin-right: 5px;
+}
+.gmail-icon {
+    width: auto;
+    height: 18px;
+}
+.footer-right a {
+    text-decoration: none;
+}
+/* Make the footer compress on small screens */
+@media screen and (max-width: 768px) {
+    footer {
+        flex-direction: column-reverse;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .footer-left, .footer-right {
+        text-align: center;
+        flex: none;
+        width: 100%;
+    }
+    .footer-right {
+        margin-bottom: 20px;
+    }
+    .gmail-logo {
+        margin-right: 20px;
+    }
+}
+
+.header {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 800;
+    font-style: bold;
+}
